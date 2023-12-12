@@ -15,21 +15,21 @@ if __name__ == "__main__":
     st.subheader("Graphics")
     choose = st.selectbox("Graphics: ", ['interrelation (Difference to Price In %) and (Difference to Cup In %)  without Form Juice', 'describe', ' Proportion of Fresh, Canned, etc... Fruits and Vegetables','Connection between different Forms and Retail price', ' New info'])
     if choose == 'interrelation (Difference to Price In %) and (Difference to Cup In %)  without Form Juice':
-        response = requests.get(https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/cupsize.png)
+        response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/cupsize.png")
         img =
     if choose == 'describe':
-        response = requests.get(https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/describe.png)
+        response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/describe.png")
         img =
     if choose == ' Proportion of Fresh, Canned, etc... Fruits and Vegetables':
-        response = requests.get(https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/different_forms.png)
+        response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/different_forms.png")
         img =
     if choose == 'Connection between different Forms and Retail price':
-        response = requests.get(https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/forms_from_retailprice.png)
+        response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/forms_from_retailprice.png")
         img =
     if choose == 'interrelation (Difference to Price In %) and (Difference to Cup In %) without Form Juice':
-        response = requests.get()
+        response = requests.get("")
         img =
     if choose == 'New info':
-        response = requests.get(https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/info.png)
+        response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/info.png")
         img =
    
