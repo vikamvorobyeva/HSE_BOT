@@ -16,20 +16,26 @@ if __name__ == "__main__":
     choose = st.selectbox("Graphics: ", ['interrelation (Difference to Price In %) and (Difference to Cup In %)  without Form Juice', 'describe', ' Proportion of Fresh, Canned, etc... Fruits and Vegetables','Connection between different Forms and Retail price', ' New head', ' New info'])
     if choose == 'interrelation (Difference to Price In %) and (Difference to Cup In %)  without Form Juice':
         response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/cupsize.png")
-        img =
+        img = Image.open(BytesIO(response.content))
+        st.image(img)
     if choose == 'describe':
         response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/describe.png")
-        img =
+        img = Image.open(BytesIO(response.content))
+        st.image(img)
     if choose == ' Proportion of Fresh, Canned, etc... Fruits and Vegetables':
         response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/different_forms.png")
-        img =
+        img = Image.open(BytesIO(response.content))
+        st.image(img)
     if choose == 'Connection between different Forms and Retail price':
         response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/forms_from_retailprice.png")
-        img =
+        img = Image.open(BytesIO(response.content))
+        st.image(img)
     if choose == 'New head':
         response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/start.png")
-        img =
+        img = Image.open(BytesIO(response.content))
+        st.image(img)
     if choose == 'New info':
         response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/info.png")
-        img =
+        img = Image.open(BytesIO(response.content))
+        st.image(img)
    
