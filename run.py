@@ -27,7 +27,7 @@ if __name__ == "__main__":
         response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/forms_from_retailprice.png")
         img =
     if choose == 'interrelation (Difference to Price In %) and (Difference to Cup In %) without Form Juice':
-        response = requests.get("")
+        response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/cupsize.png")
         img =
     if choose == 'New info':
         response = requests.get("https://raw.githubusercontent.com/vikamvorobyeva/HSE_BOT/main/info.png")
